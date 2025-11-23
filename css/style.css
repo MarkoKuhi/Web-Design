@@ -91,20 +91,10 @@ nav {
 
 .hero-image {
     width: 100%;
-    height: auto;
-    display: block;
 }
 
 .hero-text {
     margin-top: 1rem;
-}
-
-.hero-text h1 {
-    margin: 0 0 0.5rem;
-}
-
-.intro {
-    margin-bottom: 2rem;
 }
 
 .quick-links {
@@ -146,24 +136,4 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     background-color: #f7f7f7;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-    }
-
-    .nav-links a {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    main {
-        margin: 10px auto;
-    }
 }
