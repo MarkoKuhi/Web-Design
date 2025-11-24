@@ -30,17 +30,17 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(57, 51, 51);
-    padding: 0 20px;
+    padding: 15px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .logo {
-    height: 60px;
+    height: 80px;
     width: auto;
 }
-
+/* Css for the navigator menu */
 nav {
     display: flex;
     align-items: center;
@@ -84,18 +84,114 @@ nav {
     background-color: #73AD21;
 }
 
+/* Css for the Sonderborg main imagen */
+
 .hero {
     text-align: center;
-    margin-bottom: 2rem;
+     margin: 0;
 }
 
 .hero-image {
     width: 100%;
 }
 
-.hero-text {
-    margin-top: 1rem;
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  
 }
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* texto a la izquierda, mapa a la derecha */
+  gap: 20px;
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.map-image {
+  width: 440px;
+  height: auto;
+}
+
+.hero-box {
+    position: absolute;
+    top: 120px;
+    right: 50px; /*  right aline */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px 35px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 380px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.contact-side {
+  position: fixed;
+  top: 40%;              
+  left: 0;               /* left side */
+  width: 60px;
+  height: 180px;
+  background-color: #73AD21;
+  border-radius: 0 10px 10px 0; /* round borders to the right  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl; /* vertical text */
+  text-orientation: mixed;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 999;
+}
+
+.contact-side a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-side:hover {
+  background-color: #dbddd9;
+  transform: translateX(5px); /* Moves 5px to the right  */
+}
+
+/* Text inside the box */
+.hero-box h2 {
+    margin: 0 0 10px;
+    color: #222;
+    font-size: 2.2rem; 
+    line-height: 1.2;
+}
+
+.hero-box p {
+    color: #444;
+    font-size: 1.2rem; 
+    line-height: 1.5;
+}
+
+
+/* main links of the open page */
 
 .quick-links {
     display: flex;
@@ -109,6 +205,21 @@ nav {
     border: 1px solid #ddd;
     padding: 1rem;
 }
+
+.quick-links .article1{
+background-color: #7d7171;
+color : white;
+}
+.quick-links .article1 a{
+
+color : white;
+    font-size: 16px;
+}
+
+
+
+
+
 
 table {
     border-collapse: collapse;
