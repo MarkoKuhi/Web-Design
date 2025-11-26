@@ -193,30 +193,69 @@ nav {
 
 /* main links of the open page */
 
+
+/* ===== NEW QUICK LINKS GRID (modern cards) ===== */
+
 .quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* Card container */
+.info-card {
+    position: relative;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
 }
 
-.quick-links article {
-    flex: 1 1 250px;
-    border: 1px solid #ddd;
-    padding: 1rem;
+/* Dark overlay */
+.info-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
 }
 
-.quick-links .article1{
-background-color: #7d7171;
-color : white;
-}
-.quick-links .article1 a{
-
-color : white;
-    font-size: 16px;
+/* Text always above overlay */
+.info-card h2,
+.info-card p,
+.info-card a {
+    position: relative;
+    z-index: 2;
 }
 
+.info-card h2 {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
 
+.info-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.info-card a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.info-card:hover {
+    transform: scale(1.03);
+}
 
 
 
