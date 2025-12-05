@@ -10,10 +10,9 @@ body {
 
 main {
     max-width: 1100px;
-    margin: 20px auto;
+    margin: 40px auto 30px; /* natuke rohkem ruumi */
     padding: 0 20px;
 }
-
 
 footer {
     padding: 0 20px;
@@ -40,6 +39,7 @@ header {
     height: 80px;
     width: auto;
 }
+
 /* Css for the navigator menu */
 nav {
     display: flex;
@@ -76,13 +76,11 @@ nav {
     background-color: #73AD21;
 }
 
-
-
 /* Css for the Sonderborg main imagen */
 
 .hero {
     text-align: center;
-     margin: 0;
+    margin: 0;
 }
 
 .hero-image {
@@ -93,7 +91,6 @@ nav {
   position: relative;
   text-align: center;
   margin: 0;
-  
 }
 
 .hero-image {
@@ -105,7 +102,7 @@ nav {
 .hero-text {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* texto a la izquierda, mapa a la derecha */
+  justify-content: space-between; /* tekst vasakul, kaart paremal */
   gap: 20px;
   max-width: 900px;
   margin: 1rem auto;
@@ -126,7 +123,7 @@ nav {
 .hero-box {
     position: absolute;
     top: 120px;
-    right: 50px; /*  right aline */
+    right: 50px; /* right align */
     background-color: rgba(255, 255, 255, 0.9);
     padding: 25px 35px;
     border-radius: 10px;
@@ -134,8 +131,6 @@ nav {
     max-width: 380px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
-
 
 .contact-side {
   position: fixed;
@@ -184,11 +179,7 @@ nav {
     line-height: 1.5;
 }
 
-
-/* main links of the open page */
-
-
-/* ===== NEW QUICK LINKS GRID (modern cards) ===== */
+/* ===== QUICK LINKS GRID (avaleht) ===== */
 
 .quick-links {
     display: grid;
@@ -251,9 +242,6 @@ nav {
     transform: scale(1.03);
 }
 
-
-
-
 table {
     border-collapse: collapse;
     margin: 1rem 0;
@@ -281,3 +269,69 @@ footer {
     font-size: 0.9rem;
     background-color: #f7f7f7;
 }
+
+/* ===== UUDISED (news page) ===== */
+
+.page-header {
+    max-width: 800px;
+    margin: 2rem auto 1.5rem;
+}
+
+.page-header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    margin: 0;
+    color: #444;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* üks uudise “kaart” */
+.news-item {
+    padding: 1.5rem 1.8rem;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.news-item h2 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    border-left: 4px solid #73AD21;
+    padding-left: 0.6rem;
+}
+
+.news-date {
+    margin: 0 0 0.8rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.news-item p {
+    margin: 0 0 0.6rem;
+    line-height: 1.6;
+}
+
+/* Mobiilitäpsustused */
+
+@media (max-width: 600px) {
+    .news-item {
+        padding: 1.2rem 1.2rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.9rem;
+    }
+}
+
+
+
