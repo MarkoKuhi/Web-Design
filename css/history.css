@@ -90,41 +90,45 @@ nav {
 
 
 
-/* -------------------- COAST SECTION -------------------- */
-
-.coast {
-    position: relative;
+/* ---------- HERO FULL IMAGE STYLE ---------- */
+.sightseeing-hero2 {
     width: 100%;
-    height: 350px; /* Adjust height if needed */
+    height: 350px; /* Ajusta la altura si quieres más grande */
+    background-image: url('../images/alscoast.jpg'); /* <-- TU IMAGEN */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
     overflow: hidden;
 }
 
-.coast-image {
+/* Oscurecido encima de la imagen */
+.sightseeing-hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the space nicely */
+    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    z-index: 1;
 }
 
-/* White title box on top of the image */
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-
+/* Título centrado, por encima del filtro oscuro */
+.hero-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 800;
     text-align: center;
-}
-
-.title h1 {
-    margin: 0;
-    font-size: 2.2rem;
-    color: #222;
-    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 

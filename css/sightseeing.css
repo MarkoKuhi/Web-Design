@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+footer {
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(57, 51, 51);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+/* Css for the navigator menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 20px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #73AD21;
+}
+
+.nav-links a[aria-current="page"] {
+    background-color: #73AD21;
+}
+
+
+.nav-links .contact-botton {
+    padding: 10px 18px;
+    margin-left: 16px;
+    border: 2px solid #73AD21;
+    border-radius: 50px;
+    background-color: #73AD21;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- HERO FULL IMAGE STYLE ---------- */
+.sightseeing-hero2 {
+    width: 100%;
+    height: 350px; /* Ajusta la altura si quieres más grande */
+    background-image: url('../images/sonderborg-castle.jpg'); /* <-- TU IMAGEN */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Oscurecido encima de la imagen */
+.sightseeing-hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    z-index: 1;
+}
+
+/* Título centrado, por encima del filtro oscuro */
+.hero-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* LAYOUT 2 COLUMNAS */
+.attraction {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Columna izquierda */
+.text-box {
+    width: 50%;
+}
+
+.text-box h2{
+    color: #73AD21;
+}
+
+/* Columna derecha (IMAGEN + INFO-BOX) */
+.right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Imagen */
+.attraction-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* INFO BOX DENTRO DE LA COLUMNA DERECHA */
+.info-box {
+    background: #062a4f;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.info-box p {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 12px 0;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* Botón */
+.ticket-button {
+    display: block;
+    background: #b6f6c8;
+    color: #002445;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.ticket-button:hover {
+    background: #a2e9b7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .attraction {
+        flex-direction: column;
+    }
+    .text-box, .right-column {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

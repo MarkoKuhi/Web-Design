@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sønderborg - Events</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
 </head>
+
 <body>
 
     <header>
         <img src="images/sonderborglogo.png" alt="Sønderborg logo" class="logo">
-
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="history.html">History</a></li>
-                <li><a href="events.html" aria-current="page">Events</a></li>
+                <li><a href="events.html" aria-current="page" class="active">Events</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="sightseeing.html">Sightseeing</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,105 +24,90 @@
         </nav>
     </header>
 
-    <main>
+ 
+   <section class="sightseeing-hero2">
+    <h1 class="hero-title">EVENTS IN SØNDERBORG</h1>
+</section>
 
-        <h1>Events in Sønderborg</h1>
+    <main class="events-container">
+
+        <!-- EVENTOS EN UNA SOLA COLUMNA -->
+         <!-- EVENT 1 -->
+    <article class="event-card">
+        <img src="images/chritmas.jpg" alt="Christmas Market" class="event-img">
+        <h3>Christmas Market</h3>
+        <p><strong>Date:</strong> 5 December</p>
+        <p><strong>Place:</strong> Sønderborg Town Square</p>
         <p>
-            Sønderborg has cultural, historical and family-friendly events during the whole year. 
-            Below you can see some of the main events and a simple calendar for December.
+            A traditional Christmas market with handmade crafts, warm drinks, 
+            food stalls, music, and a festive atmosphere.
         </p>
+    </article>
 
-        <section>
-            <h2>Upcoming Events</h2>
+    <!-- EVENT 2 -->
+    <article class="event-card">
+        <img src="images/sonderborg-castle.jpg" alt="Castle Christmas Exhibition" class="event-img">
+        <h3>Castle Christmas Exhibition</h3>
+        <p><strong>Date:</strong> 12–13 December</p>
+        <p><strong>Place:</strong> Sønderborg Castle</p>
+        <p>
+            Enjoy a holiday-themed exhibition inside the historic castle, 
+            with decorations, storytelling and guided tours.
+        </p>
+    </article>
 
-            <article>
-                <h3>Christmas Market</h3>
-                <p><strong>Date:</strong> 5 December</p>
-                <p><strong>Place:</strong> Sønderborg Town Square</p>
-                <p>
-                    A traditional Christmas market with handmade crafts, warm drinks, 
-                    food stalls, music, and a festive atmosphere.
-                </p>
-            </article>
+    <!-- EVENT 3 -->
+    <article class="event-card">
+        <img src="images/newyears.jpg" alt="Winter Light Walk" class="event-img">
+        <h3>Winter Light Walk</h3>
+        <p><strong>Date:</strong> 19 December</p>
+        <p><strong>Place:</strong> Harbour Promenade</p>
+        <p>
+            A beautiful evening walk along the harbour with lights, music, 
+            and cosy Christmas feeling.
+        </p>
+    </article>
 
-            <article>
-                <h3>Castle Christmas Exhibition</h3>
-                <p><strong>Date:</strong> 12–13 December</p>
-                <p><strong>Place:</strong> Sønderborg Castle</p>
-                <p>
-                    Enjoy a holiday-themed exhibition inside the historic castle, 
-                    with decorations, storytelling and guided tours.
-                </p>
-            </article>
+    <!-- EVENT 4 -->
+    <article class="event-card">
+        <h3>New Year Celebration</h3>
+        <p><strong>Date:</strong> 31 December</p>
+        <p><strong>Place:</strong> Sønderborg Harbour</p>
+        <p>
+            Join the New Year's Eve celebration with fireworks and live music by the water.
+        </p>
+    </article>
 
-            <article>
-                <h3>Winter Light Walk</h3>
-                <p><strong>Date:</strong> 19 December</p>
-                <p><strong>Place:</strong> Harbour Promenade</p>
-                <p>
-                    A beautiful evening walk along the harbour with lights, music, 
-                    and cosy Christmas feeling.
-                </p>
-            </article>
+   
 
-            <article>
-                <h3>New Year Celebration</h3>
-                <p><strong>Date:</strong> 31 December</p>
-                <p><strong>Place:</strong> Sønderborg Harbour</p>
-                <p>
-                    Join the New Year's Eve celebration with fireworks and live music by the water.
-                </p>
-            </article>
-        </section>
-
-        <section>
+        <section class="calendar-section">
             <h2>December Event Calendar</h2>
-            <p>
-                This calendar shows the main events during December in Sønderborg. 
-                Highlighted days have special activities and Christmas events.
-            </p>
+            <p>Highlighted days show special activities and Christmas events.</p>
 
+            <!-- Your table remains unchanged -->
             <table>
                 <caption>December – Sønderborg Events</caption>
                 <tr>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                    <th>Sun</th>
+                    <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                    <td>1</td><td>2</td><td>3</td><td>4</td>
                     <td><strong>5</strong><br><small>Christmas Market</small></td>
-                    <td>6</td>
-                    <td>7</td>
+                    <td>6</td><td>7</td>
                 </tr>
                 <tr>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
+                    <td>8</td><td>9</td><td>10</td><td>11</td>
                     <td><strong>12</strong><br><small>Castle Christmas</small></td>
                     <td><strong>13</strong><br><small>Castle Christmas</small></td>
                     <td>14</td>
                 </tr>
                 <tr>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
+                    <td>15</td><td>16</td><td>17</td><td>18</td>
                     <td><strong>19</strong><br><small>Winter Lights</small></td>
-                    <td>20</td>
-                    <td>21</td>
+                    <td>20</td><td>21</td>
                 </tr>
                 <tr>
-                    <td>22</td>
-                    <td>23</td>
+                    <td>22</td><td>23</td>
                     <td>24<br><small>Christmas Eve</small></td>
                     <td>25<br><small>Christmas Day</small></td>
                     <td>26</td>
@@ -130,13 +115,9 @@
                     <td>28</td>
                 </tr>
                 <tr>
-                    <td>29</td>
-                    <td>30</td>
+                    <td>29</td><td>30</td>
                     <td><strong>31</strong><br><small>New Year Event</small></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td></td><td></td><td></td><td></td>
                 </tr>
             </table>
         </section>

@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sønderborg - Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+  
+      <!-- Correct Google Icons import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 48px; /* tamaño ideal */
+}
+</style>
+
+    
+
 </head>
 <body>
 
@@ -24,66 +41,87 @@
         </nav>
     </header>
 
-    <main>
+     <section class="sightseeing-hero2">
+    <h1 class="hero-title">Contact</h1>
+</section>
 
-        <h1>Contact Information</h1>
-        <p>
-            Here you can find the contact details for Sønderborg’s tourist office 
-            and important city services. Feel free to contact them if you need help 
-            during your visit.
-        </p>
+    <main class="contact-container">
+ 
+        <section class="contact-cards">
 
-        <section>
-            <h2>Tourist Information Center</h2>
-            <img src="images/tourist-info.jpg" alt="Sønderborg tourist office">
+    <!-- Opening Hours -->
+    <div class="contact-card">
+     <span class="material-symbols-outlined">
+calendar_clock
+</span>
+        <h3>Opening Hours</h3>
+        <p>Mon – Fri: 9:00 – 16:00</p>
+        <p>Sat: 10:00 – 14:00</p>
+    </div>
 
-            <p><strong>Address:</strong> Perlegade 50, 6400 Sønderborg, Denmark</p>
-            <p><strong>Phone:</strong> +45 74 42 35 55</p>
-            <p><strong>Email:</strong> info@visitsonderborg.com</p>
+    <!-- Email -->
+    <div class="contact-card">
+      <span class="material-symbols-outlined">
+mail
+</span>
+        <h3>Email</h3>
+        <p>info@sonderborg.dk</p>
+        <p>tourism@sonderborg.dk</p>
+    </div>
 
-            <h3>Opening Hours</h3>
-            <table>
-                <tr>
-                    <th>Day</th>
-                    <th>Hours</th>
-                </tr>
-                <tr>
-                    <td>Monday - Friday</td>
-                    <td>09:00 - 17:00</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>10:00 - 14:00</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>Closed</td>
-                </tr>
-            </table>
-        </section>
+    <!-- Phone -->
+    <div class="contact-card">
+       <span class="material-symbols-outlined">
+phone_enabled
+</span>
+        <h3>Phone</h3>
+        <p>Main office: +45 8877 1122</p>
+        <p>Information: +45 8877 1133</p>
+    </div>
 
-        <section>
-            <h2>Emergency Services</h2>
-            <p>In case of an emergency, please use the following numbers:</p>
-            <ul>
-                <li><strong>Emergency number:</strong> 112</li>
-                <li><strong>Police (non-emergency):</strong> +45 1 14</li>
-                <li><strong>Hospital:</strong> Sønderborg Hospital, +45 79 97 50 00</li>
-            </ul>
-        </section>
+    <!-- Location -->
+    <div class="contact-card">
+<span class="material-symbols-outlined">
+location_on
+</span>
+        <h3>Location</h3>
+        <p>Perlegade 50, 6400<br>Sønderborg</p>
+        <p>Denmark</p>
+    </div>
 
-        <section>
-            <h2>Transportation Help</h2>
-            <p>
-                If you need help with bus schedules, tickets, or travel planning, 
-                you can contact:
-            </p>
-            <p><strong>Sønderborg Traffic Office</strong></p>
-            <p><strong>Phone:</strong> +45 70 10 10 10</p>
-            <p><strong>Website:</strong> www.sydtrafik.dk</p>
-        </section>
+</section>
 
+
+    <section class="contact-layout">
+
+        <!-- MAP -->
+        <div class="map-box">
+           
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1746.970361922894!2d9.792936200000002!3d54.912425500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b339c2cb4ddfad%3A0xb53bf2384d5d9a7!2sInformaci%C3%B3n%20tur%C3%ADstica%20en%20la%20Oficina%20de%20Turismo%20de%20S%C3%B8nderborg!5e1!3m2!1ses!2scz!4v1764931396250!5m2!1ses!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+        </div>
+
+        <!-- FORM -->
+        <div class="form-box">
+            <h2>Contact Form</h2>
+
+            <form>
+                <label>Name *</label>
+                <input type="text" required>
+
+                <label>Email *</label>
+                <input type="email" required>
+
+                <label>Message</label>
+                <textarea rows="5"></textarea>
+
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
     </main>
+
+        
 
     <footer>
         <p>© 2025 Sønderborg city project</p>

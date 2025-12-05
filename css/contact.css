@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+footer {
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(57, 51, 51);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+/* Css for the navigator menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 20px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #73AD21;
+}
+
+.nav-links a[aria-current="page"] {
+    background-color: #73AD21;
+}
+
+
+.nav-links .contact-botton {
+    padding: 10px 18px;
+    margin-left: 16px;
+    border: 2px solid #73AD21;
+    border-radius: 50px;
+    background-color: #73AD21;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- HERO FULL IMAGE STYLE ---------- */
+.sightseeing-hero2 {
+    width: 100%;
+    height: 350px; /* Ajusta la altura si quieres más grande */
+    background-image: url('../images/all2.jpg'); /* <-- TU IMAGEN */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Oscurecido encima de la imagen */
+.sightseeing-hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    z-index: 1;
+}
+
+/* Título centrado, por encima del filtro oscuro */
+.hero-title {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout: Map + Form */
+.contact-layout {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.map-box {
+    flex: 1;
+}
+
+.form-box {
+    flex: 1;
+}
+
+.form-box h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background: #73AD21;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5e931b;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+/* ---- GRID DE TARJETAS ---- */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* ---- TARJETA INDIVIDUAL ---- */
+.contact-card {
+    background: #02284F; /* azul oscuro */
+    color: white;
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ---- ICONO ---- */
+.icon-container {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* ---- TEXTOS ---- */
+.contact-card h3 {
+    margin: 10px 0 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.contact-card p {
+    margin: 6px 0;
+    font-size: 1.1rem;
+}

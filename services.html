@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sønderborg - Services</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
 </head>
+
 <body>
 
     <header>
@@ -17,71 +18,63 @@
                 <li><a href="news.html">News</a></li>
                 <li><a href="history.html">History</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="services.html" aria-current="page" class="active">Services</a></li>
                 <li><a href="sightseeing.html">Sightseeing</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <!-- ⭐ HERO SECTION -->
+   <section class="sightseeing-hero2">
+    <h1 class="hero-title">SERVICES IN SØNDERBORG</h1>
+</section>
 
-        <h1>Services in Sønderborg</h1>
-        <p>
-            Sønderborg offers many helpful services for visitors and locals. 
-            Here you can find information about accommodation, restaurants, 
-            transportation and local facilities in the city.
-        </p>
-
-        <section>
-            <h2>Accommodation</h2>
-            <img src="images/accommodation.jpg" alt="Accommodation in Sønderborg">
-            <p>
-                Sønderborg has a variety of places to stay, from modern hotels 
-                to small bed & breakfast houses. Many locations offer beautiful 
-                views of the harbour and coastline.
-            </p>
-            <ul>
-                <li>Hotels near the harbour</li>
-                <li>Bed & Breakfasts on Als island</li>
-                <li>Camping areas and cabins</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Restaurants & Cafés</h2>
-            <img src="images/restaurants.jpg" alt="Restaurants and cafés in Sønderborg">
-            <p>
-                The city has many great places to eat. 
-                You can find Danish food, seafood, international restaurants, 
-                coffee shops and bakeries all around the city center.
-            </p>
-            <ul>
-                <li>Seafood restaurants by the water</li>
-                <li>Cozy cafés in the old town</li>
-                <li>Fast food and take-away options</li>
-            </ul>
-        </section>
-
-        <section>
+    <main class="services-container">
+              <!-- ⭐ GOOGLE MAPS BOX -->
+        <aside class="map-box">
+            <h2>Find Us on Google Maps</h2>
+            <p>Locate key services across Sønderborg with one click.</p>
+            <a href="https://www.google.com/maps/place/Sønderborg" 
+               class="map-button" target="_blank">Open Google Maps</a>
+        </aside>
+        <!-- ⭐ FULL-WIDTH SERVICE CARD -->
+        <section class="service-card">
             <h2>Transportation</h2>
-            <img src="images/transport.jpg" alt="Transportation in Sønderborg">
             <p>
-                Sønderborg is easy to travel around. 
-                There are bus connections, bike paths and taxis available. 
-                The city is also close to the airport.
+                Sønderborg offers bus connections, bike rental stations, ferry routes and 
+                nearby airports. Public transport is accessible and well connected.
             </p>
             <ul>
-                <li>Local buses across Als island</li>
-                <li>Taxi services</li>
-                <li>Bicycle rentals</li>
-                <li>Sønderborg Airport (SGD)</li>
+                <li>Bus routes across the city</li>
+                <li>Bike and scooter rentals</li>
+                <li>Ferry to nearby islands</li>
+                <li>Parking areas and EV charging stations</li>
             </ul>
+             <img src="images/transport.jpg" alt="Tourist Information Sønderborg" class="service-img">
+
         </section>
 
-        <section>
+        <!-- ⭐ FULL-WIDTH SERVICE CARD -->
+        <section class="service-card">
+            <h2>Healthcare Services</h2>
+            <p>
+                The city provides easy access to emergency services, pharmacies,  
+                and medical centers. Most pharmacies offer extended opening hours.
+            </p>
+            <ul>
+                <li>Emergency hospital</li>
+                <li>Local clinics</li>
+                <li>Dental services</li>
+                <li>24/7 pharmacies</li>
+            </ul>
+             <img src="images/hospital.jfif" alt="Tourist Information Sønderborg" class="service-img">
+
+        </section>
+
+        <!-- ⭐ FULL-WIDTH SERVICE CARD -->
+        <section class="service-card">
             <h2>Tourist Information</h2>
-            <img src="images/tourist-info.jpg" alt="Tourist information office in Sønderborg">
             <p>
                 The tourist information center can help with maps, tickets, 
                 guided tours and general questions about the city. 
@@ -92,10 +85,14 @@
                 <li>Help with sightseeing plans</li>
                 <li>Information about local events</li>
             </ul>
+             <img src="images/tourist-info.jpg" alt="Tourist Information Sønderborg" class="service-img">
+
         </section>
 
-    </main>
+    
 
+    </main>
+        <div class="clearfix"></div>
     <footer>
         <p>© 2025 Sønderborg city project</p>
     </footer>

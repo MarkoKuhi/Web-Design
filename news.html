@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sønderborg - News</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/news.css">
 </head>
+
 <body>
 
+    <!-- ⛔ NO TOCO NADA de tu HEADER original -->
     <header>
         <img src="images/sonderborglogo.png" alt="Sønderborg logo" class="logo">
 
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="news.html" aria-current="page">News</a></li>
+                <li><a href="news.html" aria-current="page" class="active">News</a></li>
                 <li><a href="history.html">History</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -23,56 +25,106 @@
             </ul>
         </nav>
     </header>
+    <!-- ⛔ HEADER intacto -->
 
-    <main>
 
-        <h1>News in Sønderborg</h1>
-        <p>
-            Here are the latest news and updates from Sønderborg. 
-            Newest stories appear at the top.
-        </p>
+     <section class="sightseeing-hero2">
+    <h1 class="hero-title">NEWS IN SØNDERBORG</h1>
+</section>
 
-        <article>
+
+    <!-- ⭐ CONTENIDO EN DISEÑO DE DOS COLUMNAS -->
+<main class="news-layout">
+
+    <!-- COLUMNA IZQUIERDA: NOTICIAS -->
+    <section class="news-column">
+
+        <article class="news-card">
             <h2>Sønderborg Prepares for New Year Celebrations</h2>
-            <p><time datetime="2025-12-10">10 December 2025</time></p>
+            <time datetime="2025-12-10" class="date">10 December 2025</time>
             <p>
-                The city is getting ready for the annual New Year celebration at the harbour. 
-                Workers are installing lights, food stands and a special stage for live music 
-                on New Year's Eve. A large number of visitors is expected this year.
+                The city is getting ready for the annual New Year celebration at the harbour.
+                Workers are installing lights, food stands and a special stage for live music.
+                A large number of visitors is expected this year.
             </p>
+
+            <img src="images/newyears.jpg" class="news-img">
         </article>
 
-        <article>
+        <article class="news-card">
             <h2>Winter Light Walk Brings Hundreds to the Harbour</h2>
-            <p><time datetime="2025-12-05">5 December 2025</time></p>
+            <time datetime="2025-12-05" class="date">5 December 2025</time>
             <p>
-                The Winter Light Walk was a big success as hundreds of people enjoyed 
-                illuminated installations by the waterfront. Families, tourists and students 
+                The Winter Light Walk was a big success as hundreds of people enjoyed
+                illuminated installations by the waterfront. Families, tourists and students
                 joined the event to experience music, warm drinks and a cosy Christmas feeling.
             </p>
         </article>
 
-        <article>
+        <article class="news-card">
             <h2>Castle Christmas Exhibition Opens at Sønderborg Castle</h2>
-            <p><time datetime="2025-12-03">3 December 2025</time></p>
+            <time datetime="2025-12-03" class="date">3 December 2025</time>
             <p>
-                The annual Christmas exhibition at Sønderborg Castle has opened its doors. 
-                Visitors can walk through decorated rooms, see historical Christmas items 
+                The annual Christmas exhibition at Sønderborg Castle has opened its doors.
+                Visitors can walk through decorated rooms, see historical Christmas items
                 and learn about Danish holiday traditions. Guided tours are available.
             </p>
+            <img src="images/museum.jpg" class="news-img">
         </article>
 
-        <article>
+        <article class="news-card">
             <h2>Christmas Market Attracts Visitors to the Town Square</h2>
-            <p><time datetime="2025-12-01">1 December 2025</time></p>
+            <time datetime="2025-12-01" class="date">1 December 2025</time>
             <p>
-                The Christmas Market in Sønderborg started this week with stalls selling 
-                crafts, sweets and warm drinks. Many families visited during the opening day, 
+                The Christmas Market in Sønderborg started this week with stalls selling
+                crafts, sweets and warm drinks. Many families visited during the opening day,
                 attracted by the lights, music and holiday atmosphere.
             </p>
+            <img src="images/market.jpg" class="news-img">
         </article>
 
-    </main>
+    </section>
+
+    <!-- COLUMNA DERECHA: CALENDARIO -->
+    <aside class="calendar-column">
+        <div class="calendar-box">
+            <h3>Upcoming Dates</h3>
+            <ul>
+                <li><span class="date-highlight">01 Dec</span> – Christmas Market Opening</li>
+                <li><span class="date-highlight">03 Dec</span> – Castle Exhibition</li>
+                <li><span class="date-highlight">05 Dec</span> – Winter Light Walk</li>
+                <li><span class="date-highlight">31 Dec</span> – New Year's Celebration</li>
+            </ul>
+        </div>
+
+
+      <div class="side-box">
+    <h3>SDU Expands in Sønderborg</h3>
+    <p>
+        The University of Southern Denmark (SDU) is opening a new building next to 
+        the Alsik Hotel. The new facility will support engineering programs and 
+        innovation labs, strengthening the city's role as a technology hub.
+    </p>
+    <img src="images/universidad.jpg" class="news-img">
+</div>
+
+<div class="side-box">
+    <h3>Sønderborg Opens New Sauna </h3>
+    <p>
+       Sønderborg’s popular waterfront has 
+       gained a new attraction this week as the 
+       city officially opened its upgraded public sauna. 
+       Located just a few steps from the fjord, the facility aims 
+       to promote well-being, outdoor culture, 
+       and the growing interest in winter bathing among both residents and visitors.
+    </p>
+    <img src="images/sauna.jfif" class="news-img">
+</div>
+    </aside>
+
+
+
+</main>
 
     <footer>
         <p>© 2025 Sønderborg city project</p>
