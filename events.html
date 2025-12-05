@@ -26,119 +26,125 @@
 
     <main>
 
-        <h1>Events in Sønderborg</h1>
-        <p>
-            Sønderborg has cultural, historical and family-friendly events during the whole year. 
-            Below you can see some of the main events and a simple calendar for December.
-        </p>
-
-        <section>
-            <h2>Upcoming Events</h2>
-
-            <article>
-                <h3>Christmas Market</h3>
-                <p><strong>Date:</strong> 5 December</p>
-                <p><strong>Place:</strong> Sønderborg Town Square</p>
-                <p>
-                    A traditional Christmas market with handmade crafts, warm drinks, 
-                    food stalls, music, and a festive atmosphere.
-                </p>
-            </article>
-
-            <article>
-                <h3>Castle Christmas Exhibition</h3>
-                <p><strong>Date:</strong> 12–13 December</p>
-                <p><strong>Place:</strong> Sønderborg Castle</p>
-                <p>
-                    Enjoy a holiday-themed exhibition inside the historic castle, 
-                    with decorations, storytelling and guided tours.
-                </p>
-            </article>
-
-            <article>
-                <h3>Winter Light Walk</h3>
-                <p><strong>Date:</strong> 19 December</p>
-                <p><strong>Place:</strong> Harbour Promenade</p>
-                <p>
-                    A beautiful evening walk along the harbour with lights, music, 
-                    and cosy Christmas feeling.
-                </p>
-            </article>
-
-            <article>
-                <h3>New Year Celebration</h3>
-                <p><strong>Date:</strong> 31 December</p>
-                <p><strong>Place:</strong> Sønderborg Harbour</p>
-                <p>
-                    Join the New Year's Eve celebration with fireworks and live music by the water.
-                </p>
-            </article>
+        <!-- Lehe pealkiri -->
+        <section class="page-header events-header">
+            <h1>Events in Sønderborg</h1>
+            <p>
+                Sønderborg has cultural, historical and family-friendly events during the whole year. 
+                Below you can see some of the main events and a simple calendar for December.
+            </p>
         </section>
 
-        <section>
-            <h2>December Event Calendar</h2>
-            <p>
-                This calendar shows the main events during December in Sønderborg. 
-                Highlighted days have special activities and Christmas events.
-            </p>
+        <!-- Kaks veergu: sündmused + kalender -->
+        <section class="events-content">
 
-            <table>
-                <caption>December – Sønderborg Events</caption>
-                <tr>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                    <th>Sun</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td><strong>5</strong><br><small>Christmas Market</small></td>
-                    <td>6</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td><strong>12</strong><br><small>Castle Christmas</small></td>
-                    <td><strong>13</strong><br><small>Castle Christmas</small></td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>16</td>
-                    <td>17</td>
-                    <td>18</td>
-                    <td><strong>19</strong><br><small>Winter Lights</small></td>
-                    <td>20</td>
-                    <td>21</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>23</td>
-                    <td>24<br><small>Christmas Eve</small></td>
-                    <td>25<br><small>Christmas Day</small></td>
-                    <td>26</td>
-                    <td><strong>27</strong><br><small>Harbour Walk</small></td>
-                    <td>28</td>
-                </tr>
-                <tr>
-                    <td>29</td>
-                    <td>30</td>
-                    <td><strong>31</strong><br><small>New Year Event</small></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <!-- Upcoming Events -->
+            <section class="events-list">
+                <h2>Upcoming Events</h2>
+
+                <article class="event-item">
+                    <h3>Christmas Market</h3>
+                    <p class="event-meta"><strong>Date:</strong> 5 December · <strong>Place:</strong> Sønderborg Town Square</p>
+                    <p>
+                        A traditional Christmas market with handmade crafts, warm drinks, 
+                        food stalls, music, and a festive atmosphere.
+                    </p>
+                </article>
+
+                <article class="event-item">
+                    <h3>Castle Christmas Exhibition</h3>
+                    <p class="event-meta"><strong>Date:</strong> 12–13 December · <strong>Place:</strong> Sønderborg Castle</p>
+                    <p>
+                        Enjoy a holiday-themed exhibition inside the historic castle, 
+                        with decorations, storytelling and guided tours.
+                    </p>
+                </article>
+
+                <article class="event-item">
+                    <h3>Winter Light Walk</h3>
+                    <p class="event-meta"><strong>Date:</strong> 19 December · <strong>Place:</strong> Harbour Promenade</p>
+                    <p>
+                        A beautiful evening walk along the harbour with lights, music, 
+                        and cosy Christmas feeling.
+                    </p>
+                </article>
+
+                <article class="event-item">
+                    <h3>New Year Celebration</h3>
+                    <p class="event-meta"><strong>Date:</strong> 31 December · <strong>Place:</strong> Sønderborg Harbour</p>
+                    <p>
+                        Join the New Year's Eve celebration with fireworks and live music by the water.
+                    </p>
+                </article>
+            </section>
+
+            <!-- Calendar -->
+            <section class="events-calendar">
+                <h2>December Event Calendar</h2>
+                <p>
+                    This calendar shows the main events during December in Sønderborg. 
+                    Highlighted days have special activities and Christmas events.
+                </p>
+
+                <table>
+                    <caption>December – Sønderborg Events</caption>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td><strong>5</strong><br><small>Christmas Market</small></td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td><strong>12</strong><br><small>Castle Christmas</small></td>
+                        <td><strong>13</strong><br><small>Castle Christmas</small></td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td><strong>19</strong><br><small>Winter Lights</small></td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24<br><small>Christmas Eve</small></td>
+                        <td>25<br><small>Christmas Day</small></td>
+                        <td>26</td>
+                        <td><strong>27</strong><br><small>Harbour Walk</small></td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td><strong>31</strong><br><small>New Year Event</small></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+
         </section>
 
     </main>
