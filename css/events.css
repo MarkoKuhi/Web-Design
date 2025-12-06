@@ -15,7 +15,9 @@ main {
 
 
 footer {
-    padding: 0 20px;
+    text-align: center;   /* 👈 centra el texto */
+    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
+    width: 100%;          /* 👈 ocupa todo el ancho */
 }
 
 img {
@@ -139,73 +141,110 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----- CONTENEDOR PRINCIPAL ----- */
 .events-container {
-    max-width: 1250px;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
     padding: 0 20px;
 }
 
-/* Texto de introducción */
-.intro-text {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 1.1rem;
-}
-
-/* ----- TARJETAS DE EVENTO ----- */
+/* Tarjeta general */
 .event-card {
-    background: white;
-    padding: 20px 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    border-left: 6px solid #76b82a;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+    color: white;
+    padding: 40px 25px;
+    height: 340px;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-.event-card h3 {
-    margin-top: 0;
-    font-size: 1.4rem;
-}
-
-/* Imagen dentro del recuadro */
-.event-img {
+/* Imagen como fondo (usa tu <img> actual) */
+.event-card .event-img {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 12px 12px 0 0;
-    margin-bottom: 15px;
+    z-index: 1;
 }
+
+/* Sombra oscura para que el texto se lea */
+.event-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.25)
+    );
+    z-index: 2;
+}
+
+/* Contenido por encima de la imagen */
+.event-card h3,
+.event-card p {
+    position: relative;
+    z-index: 3;
+}
+
+/* Evento sin imagen → fondo neutro */
+.event-card:not(:has(.event-img)) {
+    background: linear-gradient(135deg, #07335a, #0a4d82);
+}
+
+/* Títulos */
+.event-card h3 {
+    margin-bottom: 6px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Texto */
+.event-card p {
+    margin: 4px 0;
+    font-size: 1.05rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----- CALENDARIO ----- */
 .calendar-section {
     margin-top: 50px;
     text-align: center;
+     
 }
 
 table {
@@ -223,10 +262,7 @@ th, td {
 
 
 /* ------ CALENDARIO MEJORADO ------ */
-.calendar-section {
-    margin-top: 60px;
-    text-align: center;
-}
+
 
 .calendar-section h2 {
     font-size: 2rem;
@@ -239,18 +275,7 @@ th, td {
     font-size: 1.1rem;
 }
 
-/* Tabla */
-.calendar-section table {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    font-size: 1rem;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+
 
 .calendar-section th {
     background: #73AD21; /* tu verde */
@@ -287,3 +312,147 @@ th, td {
     background: #fafafa;
     cursor: default;
 }
+
+
+/* SECCIÓN CALENDARIO A PANTALLA COMPLETA */
+.calendar-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 👈 centra TODO lo de dentro */
+    justify-content: center;
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+}
+
+/* TABLA CENTRADA Y ESTABLE */
+.calendar-section table {
+    width: 90%;          /* 👈 puedes subir a 95 si quieres más grande */
+    max-width: 1200px;
+    margin: 0 auto;      /* 👈 centra en combinación con width */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+/*Responsive Design */
+
+
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: auto;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+
+/* photo title */
+@media (max-width: 768px) {  
+    /* HERO */
+    .sightseeing-hero2 {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }  }
+
+
+
+
+   @media (max-width: 768px) {
+
+    /* --- EVENTOS RESPONSIVE --- */
+
+    .events-container {
+        grid-template-columns: 1fr;   /* 👈 1 columna en móvil */
+        padding: 0 10px;
+        gap: 25px;
+    }
+
+    .event-card {
+        height: 360px;                /* Más alto en móvil */
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .event-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .event-card p {
+        font-size: 1rem;
+    }
+
+    .event-card .event-img {
+        object-position: center;      /* Centrar mejor */
+    }
+
+
+
+    /* --- CALENDARIO RESPONSIVE --- */
+
+    .calendar-section {
+        padding: 20px 10px;
+    }
+
+    .calendar-section h2 {
+        font-size: 1.7rem;            /* Título más pequeño */
+    }
+
+    .calendar-section p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* Contenedor scrollable (si la tabla es ancha) */
+    .calendar-section table {
+        width: 100%;
+        font-size: 0.85rem;           /* Reducir tamaño del texto */
+    }
+
+    .calendar-section th,
+    .calendar-section td {
+        padding: 10px 4px;            /* Reduce tamaño interno */
+    }
+
+    .calendar-section td small {
+        font-size: 0.7rem;
+    }
+}
+
+
+

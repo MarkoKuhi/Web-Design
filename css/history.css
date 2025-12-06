@@ -15,7 +15,9 @@ main {
 
 
 footer {
-    padding: 0 20px;
+    text-align: center;   /* 👈 centra el texto */
+    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
+    width: 100%;          /* 👈 ocupa todo el ancho */
 }
 
 img {
@@ -119,6 +121,8 @@ nav {
     z-index: 1;
 }
 
+
+
 /* Título centrado, por encima del filtro oscuro */
 .hero-title {
     position: relative;
@@ -133,211 +137,156 @@ nav {
 
 
 
-/* -------------------- Right Imagen section-------------------- */
+/* ===== HISTORY PAGE LAYOUT ===== */
 
-/* Text on the left, picture on the right */
-.right-picture {
-    display: flex;
-    align-items: center ;
-    gap: 30px;
-    margin-bottom: 50px;
-    background-color: rgb(225, 225, 218);
-    border-radius: 10px;
+.history-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
-/* The text box takes up more space */
-.right-picture .text {
-    flex: 1;
-    margin-left: 10px;
-}
-
-/* The image stays on the right */
-.right-picture img.street {
-    width: 45%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.right-picture {
-    width: 100%;
-}
-
-.right-picture h1{
-     text-align: center;
-}
-
-
-
-/* -------------------- Castle section-------------------- */
-.castle h2{
-    text-align: center;
-
-
-}
-
-.castle-picture{
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-.castle{
-    background-color: rgb(225, 225, 218);
-    border-radius: 10px;
-}
-
-.castle p{
-    margin-left: 10px;
-}
-
-
-/* -------------------- War section-------------------- */
-
-/* Text on the left, picture on the right */
-.war{
-    display: flex;
-    align-items: center ;
-    gap: 30px;
-    margin-bottom: 50px;
-    background-color: rgb(225, 225, 218);
-    border-radius: 10px;
-}
-
-/* The text box takes up more space */
-.war.text {
-    flex: 1;
-    margin-left: 10px;
-}
-
-/* The image stays on the right */
-.war img.molino{
-    width: 45%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.war {
-    width: 100%;
-}
-
-.war h2{
-     text-align: center;
-}
-
-.war p{
-      margin-left: 10px;
-}
-
-
-/* -------------------- reunification section-------------------- */
-
-.reunification {
+.history-block {
     display: flex;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 50px;
-    background-color: rgb(225, 225, 218);
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
+    gap: 40px;
+    margin-bottom: 90px;
 }
 
-/* Text box on the left */
-.reunification .text {
+.history-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.history-text {
     flex: 1;
-    margin-left: 10px;
 }
 
-/* Image on the right */
-.reunification img.rock{
-    width: 45%;
-    border-radius: 10px;
+.history-text h2 {
+    font-size: 2.2rem;
+    color: #07335a;
+    margin-bottom: 15px;
+}
+
+.history-text p {
+    font-size: 1.15rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.history-image {
+    flex: 1;
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     object-fit: cover;
 }
 
-/* Center the section title */
-.reunification h2 {
-    text-align: center;
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+    .history-block,
+    .history-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-image img {
+        max-height: 280px;
+    }
+
+    .history-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .history-text p {
+        font-size: 1rem;
+    }
 }
 
-/* Paragraph spacing */
-.reunification p {
-    margin-left: 10px;
-}
-
-
-.reunification {
-    width: 100%;
-}
-
-.reunification h2 {
-    text-align: center;
-}
-
-.reunification p {
-    margin-left: 10px;
-}
 
 
 
-/* -------------------- Modern section-------------------- */
 
 
-/* Main container */
-.modern {
-    width: 100%;
-    background-color: rgb(225, 225, 218);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 50px;
 
-    display: flex;
+
+
+
+
+
+/*Responsive Design */
+
+
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
-}
+  }
 
-/* Left side text */
-.modern .content {
-    flex: 1;
-}
-
-/* Title centered */
-.modern h2 {
-    text-align: center;
-}
-
-/* Paragraph spacing */
-.modern p {
-    margin-left: 10px;
-}
-
-/* Image on the right */
-.modern img.new {
-    width: 45%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-
-/* Center the section title */
-.modern h2 {
-    text-align: center;
-}
-
-/* Paragraph spacing */
-.modern p {
-    margin-left: 10px;
-}
-.modern {
+  nav {
     width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: auto;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
 }
 
-/* Center the section title */
-.modern h2 {
-    text-align: center;
-}
 
-/* Paragraph spacing */
-.modern p {
-    margin-left: 10px;
+
+/* photo title */
+@media (max-width: 768px) {  
+    /* HERO */
+    .sightseeing-hero2 {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }  }
+
+
+
+    /* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+    .history-block,
+    .history-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-image img {
+        max-height: 280px;
+    }
+
+    .history-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .history-text p {
+        font-size: 1rem;
+    }
 }

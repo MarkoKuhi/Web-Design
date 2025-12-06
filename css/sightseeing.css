@@ -15,7 +15,9 @@ main {
 
 
 footer {
-    padding: 0 20px;
+    text-align: center;   /* 👈 centra el texto */
+    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
+    width: 100%;          /* 👈 ocupa todo el ancho */
 }
 
 img {
@@ -212,7 +214,7 @@ nav {
 }
 
 .ticket-button:hover {
-    background: #a2e9b7;
+    background: #b6f6c8;
 }
 
 /* RESPONSIVE */
@@ -231,3 +233,86 @@ nav {
 
 
 
+/*Responsive Design */
+
+
+
+
+
+@media (max-width: 768px) {  
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: auto;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+
+/* --- MÓVIL (≤768px) --- */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .sightseeing-hero2 {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+
+    /* SECCIONES DE ATRACCIÓN */
+    .attraction {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .text-box,
+    .right-column {
+        width: 100%;
+    }
+
+    .text-box p {
+        font-size: 1rem;
+    }
+
+    .attraction-img {
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .info-box {
+        width: 100%;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .info-box p {
+        justify-content: center; /* centra icono + texto */
+    }
+
+    .ticket-button {
+        font-size: 1rem;
+        padding: 12px 0;
+    }  }

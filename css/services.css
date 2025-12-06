@@ -15,7 +15,9 @@ main {
 
 
 footer {
-    padding: 0 20px;
+    text-align: center;   /* 👈 centra el texto */
+    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
+    width: 100%;          /* 👈 ocupa todo el ancho */
 }
 
 img {
@@ -133,44 +135,121 @@ nav {
 
 
 
+/* ================================
+   SERVICES - MAIN LAYOUT
+================================ */
 
-
-
-
-
-
-
-
-
-
-
-/* ----- MAIN CONTENT ----- */
 .services-container {
-    width: 100%;
-    padding-left: 60px;
-    padding-right: 20px;
+    max-width: 1350px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
 
 
-/* ----- SERVICE CARD (LEFT COLUMN) ----- */
-.service-card {
-    width: 60%;              /* DEJA ESPACIO A LA DERECHA */
-    float: left;             /* SE PEGA A LA IZQUIERDA */
-    background: white;
-    padding: 40px;
-    margin: 40px 0;
-    border-radius: 12px;
-    border-left: 6px solid #76b82a;
+/* ==== BLOQUES DE SERVICIO ==== */
+
+.service-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.service-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-image {
+    flex: 1;
+}
+
+.service-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-.service-img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
+.service-info {
+    flex: 1;
+    background: white;
+    padding: 30px 35px;
+    border-left: 6px solid #76b82a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.service-info h2 {
+    margin-top: 0;
+    color: #07335a;
+    font-size: 1.9rem;
+}
+
+.service-info p {
+    color: #444;
+    font-size: 1.15rem;
+    line-height: 1.7;
     margin-bottom: 20px;
 }
+
+/* BUTTON */
+.service-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #73AD21;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.service-button:hover {
+    background: #5f921a;
+}
+
+
+/* ================================
+   RESPONSIVE (≤ 768px)
+================================ */
+
+@media (max-width: 768px) {
+    
+    .service-block,
+    .service-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-info {
+        border-left: none;
+        border-top: 6px solid #76b82a;
+    }
+
+    .service-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .service-info p {
+        font-size: 1rem;
+    }
+
+    .service-image img {
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----- GOOGLE MAPS BOX (RIGHT COLUMN) ----- */
@@ -204,3 +283,57 @@ nav {
 .clearfix {
     clear: both;
 }
+
+
+
+
+
+
+
+/*Responsive Design */
+
+
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: auto;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* photo title */
+@media (max-width: 768px) {  
+    /* HERO */
+    .sightseeing-hero2 {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }  }

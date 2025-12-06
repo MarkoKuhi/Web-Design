@@ -274,3 +274,131 @@ footer {
     line-height: 1.5em;
     color: #555;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive Design */
+
+
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-links li {
+    width: auto;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* photo title */
+@media (max-width: 768px) {  
+    /* HERO */
+    .sightseeing-hero2 {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+      /* Cambiar layout a una sola columna */
+    .news-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    /* Cards más compactas */
+    .news-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .news-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .date {
+        font-size: 0.85rem;
+    }
+
+    /* Imágenes más pequeñas */
+    .news-card .news-img {
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    /* Sidebar aparece debajo como una columna más */
+    .calendar-column {
+        position: static;
+        width: 100%;
+    }
+
+    .calendar-box,
+    .side-box {
+        padding: 15px;
+        border-radius: 12px;
+        margin-top: 20px;
+    }
+
+    .calendar-box h3,
+    .side-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .calendar-box li {
+        font-size: 0.9rem;
+    }
+
+    .side-box p {
+        font-size: 0.9rem;
+        line-height: 1.4em;
+    }
+
+    }
