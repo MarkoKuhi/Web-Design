@@ -239,7 +239,7 @@ nav {
 
 
 
-/* ----- CALENDARIO ----- */
+/* calendar */
 .calendar-section {
     margin-top: 50px;
     text-align: center;
@@ -325,7 +325,7 @@ th, td {
     text-align: center;
 }
 
-/* Tablee centrada */
+/* Table*/
 .calendar-section table {
     width: 90%;      
     max-width: 1200px;
@@ -378,7 +378,7 @@ th, td {
 
 /* photo title */
 @media (max-width: 768px) {  
-    /* HERO */
+
     .sightseeing-hero2 {
         height: 250px;
     }
