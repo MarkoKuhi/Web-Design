@@ -188,7 +188,6 @@ nav {
 /* main links of the open page */
 
 
-/* ===== NEW QUICK LINKS GRID (modern cards) ===== */
 
 .quick-links {
     display: grid;
@@ -269,8 +268,7 @@ footer {
 
 
 
-
-/* ===== Mobile adjustments ===== */
+/* responsive */
 @media (max-width: 768px) {
 
   /* Hero main layout */
