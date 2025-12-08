@@ -93,11 +93,11 @@ nav {
 
 
 
-/* ---------- HERO FULL IMAGE STYLE ---------- */
+
 .sightseeing-hero2 {
     width: 100%;
-    height: 350px; /* Ajusta la altura si quieres más grande */
-    background-image: url('../images/all2.jpg'); /* <-- TU IMAGEN */
+    height: 350px; 
+    background-image: url('../images/all2.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ nav {
     overflow: hidden;
 }
 
-/* Oscurecido encima de la imagen */
+
 .sightseeing-hero2::before {
     content: "";
     position: absolute;
@@ -118,11 +118,11 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    background: rgba(0,0,0,0.40); 
     z-index: 1;
 }
 
-/* Título centrado, por encima del filtro oscuro */
+
 .hero-title {
     position: relative;
     z-index: 2;
@@ -201,7 +201,7 @@ footer {
 
 
 
-/* ---- GRID DE TARJETAS ---- */
+/* grid layout */
 .contact-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -211,9 +211,9 @@ footer {
     max-width: 1200px;
 }
 
-/* ---- TARJETA INDIVIDUAL ---- */
+/* card */
 .contact-card {
-    background: #02284F; /* azul oscuro */
+    background: #02284F;
     color: white;
     padding: 35px 25px;
     border-radius: 14px;
@@ -227,13 +227,13 @@ footer {
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* ---- ICONO ---- */
+
 .icon-container {
     font-size: 45px;
     margin-bottom: 15px;
 }
 
-/* ---- TEXTOS ---- */
+
 .contact-card h3 {
     margin: 10px 0 15px;
     font-size: 1.4rem;
@@ -290,7 +290,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* HERO — ya tienes este bloque, lo dejo igual */
+    
     .sightseeing-hero2 {
         height: 220px;
     }
@@ -323,7 +323,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* GRID de tarjetas → 1 columna */
+   
     .contact-cards {
         grid-template-columns: 1fr;
         padding: 15px;

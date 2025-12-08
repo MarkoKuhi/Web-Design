@@ -92,7 +92,7 @@ nav {
 
 
 
-/* SOLO afecta a la página de noticias */
+/* news part*/
 .news-container {
     max-width: 900px;
     margin: 40px auto;
@@ -105,16 +105,16 @@ nav {
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 10px;
-    border-left: 5px solid #76b82a; /* verde que combina con tu logo */
+    border-left: 5px solid #76b82a; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }  
 
-/* Imagen dentro de cada noticia */
+
 .news-card .news-img {
     width: 100%;
-    height: 220px;          /* ajusta si quieres más grande o más pequeño */
-    object-fit: cover;      /* recorta sin deformar */
-    border-radius: 10px 10px 0 0; /* redondeo solo arriba */
+    height: 220px;     
+    object-fit: cover;      /* cu tit without deformation  */
+    border-radius: 10px 10px 0 0; /*border only top */
     display: block;
     margin-bottom: 15px;
 }
@@ -130,7 +130,7 @@ nav {
     display: block;
 }
 
-/* Footer sencillo */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -144,11 +144,11 @@ footer {
 
 
 
-/* ---------- HERO FULL IMAGE STYLE ---------- */
+
 .sightseeing-hero2 {
     width: 100%;
-    height: 350px; /* Ajusta la altura si quieres más grande */
-    background-image: url('../images/chritmas.jpg'); /* <-- TU IMAGEN */
+    height: 350px; 
+    background-image: url('../images/chritmas.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ footer {
     overflow: hidden;
 }
 
-/* Oscurecido encima de la imagen */
+
 .sightseeing-hero2::before {
     content: "";
     position: absolute;
@@ -169,11 +169,11 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    background: rgba(0,0,0,0.40); 
     z-index: 1;
 }
 
-/* Título centrado, por encima del filtro oscuro */
+
 .hero-title {
     position: relative;
     z-index: 2;
@@ -189,10 +189,10 @@ footer {
 
 
 
-/* ---- LAYOUT EN DOS COLUMNAS ---- */
+/* 2 columns layout */
 .news-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* izquierda más ancha que derecha */
+    grid-template-columns: 2fr 1fr; /*left column biggr than right  */
     gap: 40px;
     max-width: 1200px;
     margin: 40px auto;
@@ -201,26 +201,26 @@ footer {
 
 
 
-/* columna izquierda */
+/* left column  */
 .news-column {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-/* columna derecha (calendario) */
+/* right column  */
 .calendar-column {
     position: sticky;
-    top: 120px; /* se queda visible al hacer scroll */
+    top: 120px; 
 }
 
-/* caja del calendario */
+
 .calendar-box {
     background: white;
     padding: 20px 25px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-left: 6px solid #6db428; /* el verde de tu web */
+    border-left: 6px solid #6db428; 
 }
 
 .calendar-box h3 {
@@ -229,7 +229,7 @@ footer {
     color: #333;
 }
 
-/* fechas destacadas */
+
 .calendar-box ul {
     list-style: none;
     padding: 0;
@@ -260,7 +260,7 @@ footer {
     margin-top: 25px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-left: 6px solid #76b82a; /* mismo verde del calendario */
+    border-left: 6px solid #76b82a; 
 }
 
 .side-box h3 {
@@ -322,9 +322,9 @@ footer {
 
 
 
-/* photo title */
+
 @media (max-width: 768px) {  
-    /* HERO */
+   
     .sightseeing-hero2 {
         height: 250px;
     }

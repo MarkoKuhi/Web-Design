@@ -15,9 +15,9 @@ main {
 
 
 footer {
-    text-align: center;   /* 👈 centra el texto */
-    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
-    width: 100%;          /* 👈 ocupa todo el ancho */
+    text-align: center;  
+    padding: 20px 0;      
+    width: 100%;          
 }
 
 img {
@@ -92,11 +92,11 @@ nav {
 
 
 
-/* ---------- HERO FULL IMAGE STYLE ---------- */
+/*  backgroun imagen stylw */
 .sightseeing-hero2 {
     width: 100%;
-    height: 350px; /* Ajusta la altura si quieres más grande */
-    background-image: url('../images/services.jpg'); /* <-- TU IMAGEN */
+    height: 350px; 
+    background-image: url('../images/services.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ nav {
     overflow: hidden;
 }
 
-/* Oscurecido encima de la imagen */
+/* dark part*/
 .sightseeing-hero2::before {
     content: "";
     position: absolute;
@@ -117,11 +117,11 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    background: rgba(0,0,0,0.40); 
     z-index: 1;
 }
 
-/* Título centrado, por encima del filtro oscuro */
+
 .hero-title {
     position: relative;
     z-index: 2;
@@ -135,9 +135,7 @@ nav {
 
 
 
-/* ================================
-   SERVICES - MAIN LAYOUT
-================================ */
+/* Services layout  */
 
 .services-container {
     max-width: 1350px;
@@ -146,7 +144,7 @@ nav {
 }
 
 
-/* ==== BLOQUES DE SERVICIO ==== */
+/* services blocs */
 
 .service-block {
     display: flex;
@@ -193,7 +191,7 @@ nav {
     margin-bottom: 20px;
 }
 
-/* BUTTON */
+/* Button */
 .service-button {
     display: inline-block;
     padding: 12px 20px;
@@ -209,9 +207,7 @@ nav {
 }
 
 
-/* ================================
-   RESPONSIVE (≤ 768px)
-================================ */
+
 
 @media (max-width: 768px) {
     
@@ -252,7 +248,7 @@ nav {
 
 
 
-/* ----- GOOGLE MAPS BOX (RIGHT COLUMN) ----- */
+/* google maps */
 .map-box {
     float: right;
     width: 30%;
@@ -279,7 +275,7 @@ nav {
 }
 
 
-/* CLEAR FLOATS */
+
 .clearfix {
     clear: both;
 }

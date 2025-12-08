@@ -15,9 +15,9 @@ main {
 
 
 footer {
-    text-align: center;   /* 👈 centra el texto */
-    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
-    width: 100%;          /* 👈 ocupa todo el ancho */
+    text-align: center;   
+    padding: 20px 0;      
+    width: 100%;        
 }
 
 img {
@@ -97,11 +97,11 @@ nav {
 
 
 
-/* ---------- HERO FULL IMAGE STYLE ---------- */
+/* ----------IMAGE STYLE ---------- */
 .sightseeing-hero2 {
     width: 100%;
-    height: 350px; /* Ajusta la altura si quieres más grande */
-    background-image: url('../images/sonderborg-castle.jpg'); /* <-- TU IMAGEN */
+    height: 350px; 
+    background-image: url('../images/sonderborg-castle.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ nav {
     overflow: hidden;
 }
 
-/* Oscurecido encima de la imagen */
+/* dark on top of the iammgen */
 .sightseeing-hero2::before {
     content: "";
     position: absolute;
@@ -122,11 +122,11 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    background: rgba(0,0,0,0.40); 
     z-index: 1;
 }
 
-/* Título centrado, por encima del filtro oscuro */
+
 .hero-title {
     position: relative;
     z-index: 2;
@@ -143,7 +143,7 @@ nav {
 
 
 
-/* LAYOUT 2 COLUMNAS */
+/*  2 Columns layout */
 .attraction {
     display: flex;
     gap: 40px;
@@ -152,7 +152,7 @@ nav {
     padding: 0 20px;
 }
 
-/* Columna izquierda */
+/* left column  */
 .text-box {
     width: 50%;
 }
@@ -161,7 +161,7 @@ nav {
     color: #73AD21;
 }
 
-/* Columna derecha (IMAGEN + INFO-BOX) */
+/*right column  */
 .right-column {
     width: 50%;
     display: flex;
@@ -178,7 +178,7 @@ nav {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* INFO BOX DENTRO DE LA COLUMNA DERECHA */
+/*info box in the column */
 .info-box {
     background: #062a4f;
     color: white;
@@ -267,10 +267,10 @@ nav {
 }
 
 
-/* --- MÓVIL (≤768px) --- */
+
 @media (max-width: 768px) {
 
-    /* HERO */
+    
     .sightseeing-hero2 {
         height: 250px;
     }
@@ -281,7 +281,7 @@ nav {
         letter-spacing: 1px;
     }
 
-    /* SECCIONES DE ATRACCIÓN */
+
     .attraction {
         flex-direction: column;
         gap: 25px;
@@ -309,7 +309,7 @@ nav {
     }
 
     .info-box p {
-        justify-content: center; /* centra icono + texto */
+        justify-content: center; 
     }
 
     .ticket-button {

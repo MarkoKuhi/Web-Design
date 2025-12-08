@@ -15,9 +15,9 @@ main {
 
 
 footer {
-    text-align: center;   /* 👈 centra el texto */
-    padding: 20px 0;      /* 👈 padding vertical, NO lateral */
-    width: 100%;          /* 👈 ocupa todo el ancho */
+    text-align: center;  
+    padding: 20px 0;      
+    width: 100%;          
 }
 
 img {
@@ -95,11 +95,10 @@ nav {
 
 
 
-/* ---------- HERO FULL IMAGE STYLE ---------- */
 .sightseeing-hero2 {
     width: 100%;
-    height: 350px; /* Ajusta la altura si quieres más grande */
-    background-image: url('../images/horsefestival.jpg'); /* <-- TU IMAGEN */
+    height: 350px; 
+    background-image: url('../images/horsefestival.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,7 +111,7 @@ nav {
     overflow: hidden;
 }
 
-/* Oscurecido encima de la imagen */
+
 .sightseeing-hero2::before {
     content: "";
     position: absolute;
@@ -120,11 +119,11 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.40); /* ← intensidad del oscurecido */
+    background: rgba(0,0,0,0.40); 
     z-index: 1;
 }
 
-/* Título centrado, por encima del filtro oscuro */
+
 .hero-title {
     position: relative;
     z-index: 2;
@@ -150,7 +149,7 @@ nav {
     padding: 0 20px;
 }
 
-/* Tarjeta general */
+
 .event-card {
     position: relative;
     color: white;
@@ -164,7 +163,7 @@ nav {
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* Imagen como fondo (usa tu <img> actual) */
+
 .event-card .event-img {
     position: absolute;
     inset: 0;
@@ -174,7 +173,7 @@ nav {
     z-index: 1;
 }
 
-/* Sombra oscura para que el texto se lea */
+
 .event-card::before {
     content: "";
     position: absolute;
@@ -187,26 +186,26 @@ nav {
     z-index: 2;
 }
 
-/* Contenido por encima de la imagen */
+
 .event-card h3,
 .event-card p {
     position: relative;
     z-index: 3;
 }
 
-/* Evento sin imagen → fondo neutro */
+/* No picture event  */
 .event-card:not(:has(.event-img)) {
     background: linear-gradient(135deg, #07335a, #0a4d82);
 }
 
-/* Títulos */
+
 .event-card h3 {
     margin-bottom: 6px;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-/* Texto */
+
 .event-card p {
     margin: 4px 0;
     font-size: 1.05rem;
@@ -261,7 +260,7 @@ th, td {
 
 
 
-/* ------ CALENDARIO MEJORADO ------ */
+
 
 
 .calendar-section h2 {
@@ -278,7 +277,7 @@ th, td {
 
 
 .calendar-section th {
-    background: #73AD21; /* tu verde */
+    background: #73AD21; 
     color: white;
     padding: 15px 0;
     font-size: 1.1rem;
@@ -292,14 +291,14 @@ th, td {
     position: relative;
 }
 
-/* Día con evento */
+
 .calendar-section td.event-day {
     background: #f4ffe6;
     font-weight: bold;
     color: #2c6000;
 }
 
-/* Texto dentro del evento */
+
 .calendar-section td small {
     display: block;
     margin-top: 6px;
@@ -307,30 +306,30 @@ th, td {
     color: #555;
 }
 
-/* Hover para mejor interacción */
+
 .calendar-section td:hover {
     background: #fafafa;
     cursor: default;
 }
 
 
-/* SECCIÓN CALENDARIO A PANTALLA COMPLETA */
+
 .calendar-section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* 👈 centra TODO lo de dentro */
+    align-items: center;  
     justify-content: center;
     padding: 40px 0;
     background: #fff;
     text-align: center;
 }
 
-/* TABLA CENTRADA Y ESTABLE */
+/* Tablee centrada */
 .calendar-section table {
-    width: 90%;          /* 👈 puedes subir a 95 si quieres más grande */
+    width: 90%;      
     max-width: 1200px;
-    margin: 0 auto;      /* 👈 centra en combinación con width */
+    margin: 0 auto;     
     border-collapse: collapse;
     background: white;
     border-radius: 12px;
@@ -395,16 +394,16 @@ th, td {
 
    @media (max-width: 768px) {
 
-    /* --- EVENTOS RESPONSIVE --- */
+
 
     .events-container {
-        grid-template-columns: 1fr;   /* 👈 1 columna en móvil */
+        grid-template-columns: 1fr;  
         padding: 0 10px;
         gap: 25px;
     }
 
     .event-card {
-        height: 360px;                /* Más alto en móvil */
+        height: 360px;              
         padding: 30px 20px;
         border-radius: 15px;
     }
@@ -418,19 +417,19 @@ th, td {
     }
 
     .event-card .event-img {
-        object-position: center;      /* Centrar mejor */
+        object-position: center;      
     }
 
 
 
-    /* --- CALENDARIO RESPONSIVE --- */
+    /* responsive design calendar */
 
     .calendar-section {
         padding: 20px 10px;
     }
 
     .calendar-section h2 {
-        font-size: 1.7rem;            /* Título más pequeño */
+        font-size: 1.7rem;          
     }
 
     .calendar-section p {
@@ -438,15 +437,15 @@ th, td {
         margin-bottom: 15px;
     }
 
-    /* Contenedor scrollable (si la tabla es ancha) */
+    
     .calendar-section table {
         width: 100%;
-        font-size: 0.85rem;           /* Reducir tamaño del texto */
+        font-size: 0.85rem;          
     }
 
     .calendar-section th,
     .calendar-section td {
-        padding: 10px 4px;            /* Reduce tamaño interno */
+        padding: 10px 4px;        
     }
 
     .calendar-section td small {
